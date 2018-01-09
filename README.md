@@ -1,6 +1,8 @@
 ## PDF generator
 Node Pdf generator using `Typescript`, `AWS Lambda` and `Serverless` plugin.
-Bitbucket pipeline configuration included.<br/>
+Bitbucket pipeline configuration included. App generates pdf based on `EJS` template from `src/templates`.
+For single user it uploads PDF file to S3 and returns 301 for S3 url. For more than one user generator will
+ZIP all PDFs and also upload file to S3<br/>
 App has preconfigured local deployment using `serverless-offline` and `PhantomJS` for Mac and Linux <br/>
 Based on [serhiisol/node-decorators](https://github.com/serhiisol/node-decorators). Thanks @serhiisol
 #### Before deploy add your domain in `serverless.yml` file changing `DOMAIN` placeholder
