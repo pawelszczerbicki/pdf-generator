@@ -1,0 +1,21 @@
+image: node
+pipelines:
+  branches:
+    dev:
+      - step:
+          caches:
+            - node
+          script:
+            - npm run deploy:test
+    preprod:
+      - step:
+          caches:
+            - node
+          script:
+            - npm run deploy:preprod
+    master:
+      - step:
+          caches:
+            - node
+          script:
+            - npm run deploy:prod
