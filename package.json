@@ -1,7 +1,7 @@
 {
-  "name": "xynteo-pdf-generator",
+  "name": "pdf-generator",
   "version": "1.0.0",
-  "description": "PDF generator for Xynteo Talents",
+  "description": "PDF generator",
   "private": true,
   "scripts": {
     "deploy:test": "npm install && sls deploy -s test",
